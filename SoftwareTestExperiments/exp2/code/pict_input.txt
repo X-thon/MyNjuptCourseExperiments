@@ -1,0 +1,6 @@
+fileNum:1,2,3,4,5 
+wordNum:0,1,2,3,4,5,6,7,8,9
+charNum:1,2,3,4,5,6,7
+consecutiveWS:1,2,3
+wsType:1,2,3
+lineFeeds:0,1,2,3,4,5,6,7,8,9

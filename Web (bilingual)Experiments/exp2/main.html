@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to book seller</title>
+</head>
+
+<body>
+    <h1>Welcome to book seller</h1>
+    <p><strong>You are welcome</strong></p>
+
+    <!-- 在action栏设定要跳转到到php文件 -->
+    <form action="./main.php" method="post">
+        <span>please input your name: </span>
+        <input type="text" name="name">
+        <span>please input your address: </span>        
+        <input type="text" name="address">
+        <span>please input your zip: </span>
+        <input type="text" name="zip">
+
+        <p><strong>please fill in the quantity field of the following form</strong></p>
+        <!-- create a table -->
+        <table border="1" padding="lpx">
+            <tr>
+                <th>book</th>
+                <th>publisher</th>
+                <th>price</th>
+                <th>quantity</th>
+            </tr>
+            <tr>
+                <td>Web technology</td>
+                <td>Springer press</td>
+                <td>$5.0</td>
+                <td><input type="text" name="web_book_count" id="quantity_1"></td>
+            </tr>
+            <tr>
+                <td>mathematics</td>
+                <td>ACM press</td>
+                <td>$6.2</td>
+                <td><input type="text" name="mathematics_count" id="quantity_2"></td>
+            </tr>
+            <tr>
+                <td>principle of OS</td>
+                <td>Science press</td>
+                <td>$10</td>
+                <td><input type="text" name="principle_count" id="quantity_3"></td>
+            </tr>
+            <tr>
+                <td>Theory of matrix</td>
+                <td>High education press</td>
+                <td>$7.8</td>
+                <td><input type="text" name="theory_count" id="quantity_4"></td>
+            </tr>
+        </table>
+        <div>
+            <span>payment method:</span>
+            <input type="radio" name="payment_method" value="cash">cash
+            <input type="radio" name="payment_method" value="cheque">cheque
+            <input type="radio" name="payment_method" value="credit card">credit card
+        </div>
+        <br>
+        <input type="submit" class="button" value="submit">
+        <input type="reset" class="button" value="reset">
+    </form>
+
+</body>
+
+</html>

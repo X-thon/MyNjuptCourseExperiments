@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+        <title>
+            B16041713 李龙潮
+        </title>
+        <link rel="stylesheet" href="./personal_page.css">
+        <script>
+            function caculate(){
+                var n1 = a.value;
+                var n2 = b.value;
+                var n3 = c.value;
+                var roof = Math.sqrt(n2*n2 - 4*n1*n3);
+                var roof1 = (-n2 + roof) / (2.0*n1);
+                var roof2 = (-n2 - roof) / (2.0*n1);
+                var ans = document.getElementById("ans");
+                ans.innerText = "第一个根为：" + roof1 + "； 第二个根为：" + roof2;
+            }
+        </script>
+    </head>
+    
+    <body>
+        <h1 id="h1">欢迎访问B16041713 李龙潮的主页</h1>
+        <div>
+            <p id="self_introduction">
+                我是来自南京邮电大学计算机学院，软件工程(嵌入式培养)的2016级学生李龙潮。
+                <br>
+                我主要使用的编程语言是：Python，擅长Web后端开发；
+                熟悉的框架是：Flask框架；
+                熟悉的数据库是：MySQL、SQLite3；
+            </p>
+            <div id="self_introduction_img">
+                <img src="./Github-green.jpg" alt="Github" height="450px" width="600px">
+                <div id="self_experience">
+                        <p>
+                            以下是我的个人经历：
+                        </p>
+                        <ol>
+                            <li>2016年10月加入计软院科协、南邮校科协;</li>
+                            <li>2017年竞选计软院科协后台开发组组长成功;</li>
+                            <li>2018年好好学习，天天向上;</li>
+                        </ol>
+                        <p>
+                            以下是我最喜欢的四本书：
+                        </p>
+                        <ul>
+                            <li>《山海经》</li>
+                            <li>《白夜行》</li>
+                            <li>《Flask开发与实践》</li>
+                            <li>《Ring》</li>
+                        </ul>
+                </div>
+                <div id="self_hobby"> 
+                    <p>
+                        我喜欢踢足球，热爱编程，喜欢主机游戏。
+                    </p>
+                </div>
+                <br>
+                <div id="score">
+                        <table border="1" cellspacing="0" id="t" margin:auto> 
+                                <tr>
+                                    <td>课程名</td>
+                                    <td>开课学期</td>
+                                    <td>任课老师</td>
+                                    <td>分数</td>
+                                </tr>
+                                <tr>
+                                    <td>高等数学</td>
+                                    <td>2016年秋季</td>
+                                    <td>张三</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>线性代数</td>
+                                    <td>2016年秋季</td>
+                                    <td>李四</td>
+                                    <td>87</td>
+                                </tr>
+                                <tr>
+                                    <td>概率论</td>
+                                    <td>2017年秋季</td>
+                                    <td>王五</td>
+                                    <td>78</td>
+                                </tr>
+                                <tr>
+                                    <td>离散数学</td>
+                                    <td>2017年春季</td>
+                                    <td>赵六</td>
+                                    <td>93</td>
+                                </tr>
+                                <tr>
+                                    <td>数据结构</td>
+                                    <td>2018年春季</td>
+                                    <td>刘七</td>
+                                    <td>88</td>
+                                </tr>
+                                <tr>
+                                    <td>算法</td>
+                                    <td>2018年秋季</td>
+                                    <td>高九</td>
+                                    <td>99</td>
+                                </tr>
+                                <tr>
+                                    <td>操作系统</td>
+                                    <td>2018年秋季</td>
+                                    <td>冯十</td>
+                                    <td>100</td>
+                                </tr>
+                            </table>
+                </div>
+                <br>
+                <a href="https://x-thon.github.io/" margin:auto>My Friend xthon‘s blog</a>
+                <h3 margin:auto>期待下次更新······</h3>
+                <br>
+                <input type="text" id="a">X²  + <input type="text" id="b">X = <input type="text" id="c"> 
+                <button onclick="caculate()">计算方程的两个根</button>
+                <p id="ans">
+
+                </p>
+            </div>
+            <br>
+            <br>
+        </div>
+        
+    </body>
+</html>
